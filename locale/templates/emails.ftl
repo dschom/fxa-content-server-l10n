@@ -1,44 +1,3 @@
-## Non-email strings
-
-session-verify-send-push-title-2 = Logging in to your { -product-mozilla-account }?
-session-verify-send-push-body-2 = Click here to confirm it’s you
-
-# Message sent by SMS with limited character length, please test translation with the messaging segment calculator
-# https://twiliodeved.github.io/message-segment-calculator/
-# Messages should be limited to one segment
-# $code  - 6 digit code used to verify phone ownership when registering a recovery phone
-recovery-phone-setup-sms-body = { $code } is your { -brand-mozilla } verification code. Expires in 5 minutes.
-
-# Shorter message sent by SMS with limited character length, please test translation with the messaging segment calculator
-# https://twiliodeved.github.io/message-segment-calculator/
-# Messages should be limited to one segment
-# $code  - 6 digit code used to verify phone ownership when registering a recovery phone
-recovery-phone-setup-sms-short-body = { -brand-mozilla } verification code: { $code }
-
-# Message sent by SMS with limited character length, please test translation with the messaging segment calculator
-# https://twiliodeved.github.io/message-segment-calculator/
-# Messages should be limited to one segment
-# $code  - 6 digit code used to sign in with a recovery phone as backup for two-step authentication
-recovery-phone-signin-sms-body = { $code } is your { -brand-mozilla } recovery code. Expires in 5 minutes.
-
-# Shorter message sent by SMS with limited character length, please test translation with the messaging segment calculator
-# https://twiliodeved.github.io/message-segment-calculator/
-# Messages should be limited to one segment
-# $code  - 6 digit code used to sign in with a recovery phone as backup for two-step authentication
-recovery-phone-signin-sms-short-body = { -brand-mozilla } code: { $code }
-
-# Message sent by SMS with limited character length, please test translation with the messaging segment calculator
-# https://twiliodeved.github.io/message-segment-calculator/
-# Messages should be limited to one segment
-# $code  - 6 digit code used to sign in with a recovery phone as backup for account password reset
-recovery-phone-reset-password-sms-body = { $code } is your { -brand-mozilla } recovery code. Expires in 5 minutes.
-
-# Shorter message sent by SMS with limited character length, please test translation with the messaging segment calculator
-# https://twiliodeved.github.io/message-segment-calculator/
-# Messages should be limited to one segment
-# $code  - 6 digit code used to sign in with a recovery phone as backup for account password reset
-recovery-phone-reset-password-short-body = { -brand-mozilla } code: { $code }
-
 
 ## Email content
 ## Emails do not contain buttons, only links. Emails have a rich HTML version and a plaintext
@@ -354,6 +313,9 @@ view-invoice-link-action = View invoice
 # After the colon, there's a link to https://pay.stripe.com/
 view-invoice-plaintext = View Invoice: { $invoiceLink }
 
+adminResetAccounts-subject-1 = Fxa Admin: Accounts Reset
+adminResetAccounts-title-1 = Here's the account reset status
+
 cadReminderFirst-subject-1 = Reminder! Let’s sync { -brand-firefox }
 cadReminderFirst-action = Sync another device
 cadReminderFirst-action-plaintext = { cadReminderFirst-action }:
@@ -545,7 +507,6 @@ postAddTwoStepAuthentication-recovery-method-codes = You also added backup authe
 postAddTwoStepAuthentication-recovery-method-phone = You also added { $maskedPhoneNumber } as your recovery phone number.
 postAddTwoStepAuthentication-how-protects-link = How this protects your account
 postAddTwoStepAuthentication-how-protects-plaintext = How this protects your account:
-postAddTwoStepAuthentication-device-sign-out-message = To protect all your connected devices, you should sign out everywhere youʼre using this account, and then sign back in using two-step authentication.
 
 postChangeAccountRecovery-subject = Account recovery key changed
 postChangeAccountRecovery-title = You changed your account recovery key
@@ -575,7 +536,6 @@ postChangeTwoStepAuthentication-from-device = You requested this from:
 postChangeTwoStepAuthentication-action = Manage account
 postChangeTwoStepAuthentication-how-protects-link = How this protects your account
 postChangeTwoStepAuthentication-how-protects-plaintext = How this protects your account:
-postChangeTwoStepAuthentication-device-sign-out-message = To protect all your connected devices, you should sign out everywhere youʼre using this account, and then sign back in using your new two-step authentication.
 
 postConsumeRecoveryCode-title-3 = Your backup authentication code was used to confirm a password reset
 # After the colon, there is description of the device that the backup authentication code was used on
