@@ -79,6 +79,18 @@ recovery-key-pdf-support = Learn more about your account recovery key
 # Error message displayed in an alert bar if the PDF download failed.
 recovery-key-pdf-download-error = Sorry, there was a problem downloading your account recovery key.
 
+## ButtonPasskeySignin
+
+button-passkey-signin = Sign in with passkey
+
+# This is a loading state indicating that we are waiting for the user to
+# interact with their authenticator to approve the sign-in. They should see a
+# device prompt/pop-up with authentication options (or message indicating that
+# no passkeys are available).
+button-passkey-signin-loading = Securely signing in…
+
+##
+
 ## ChooseNewsletters component
 ## Checklist of newsletters that the user can choose to sign up to
 
@@ -285,6 +297,16 @@ info-icon-aria-label =
 # Used to select United States as a country code for phone number
 usa-flag-icon-aria-label =
     .aria-label = United States Flag
+
+# Used for loading arrow icon
+icon-loading-arrow-aria-label =
+    .aria-label = Loading
+
+# Used for passkey icon
+icon-passkey-aria-label =
+    .aria-label = Passkey
+
+##
 
 ## Images - these are all aria labels used for illustrations
 ## Aria labels are used as alternate text that can be read aloud by screen readers.
@@ -1270,6 +1292,29 @@ tfa-row-backup-phone-description-v2 = This is the easiest recovery method if you
 # with SMS-based two-factor authentication.
 tfa-row-backup-phone-sim-swap-risk-link = Learn about SIM swap risk
 
+# This is a string that shows when the user's passkey was created.
+# Variables:
+#   $createdDate (String) - a localized date string
+passkey-sub-row-created-date = Created: { $createdDate }
+
+# This is a string that shows when the user's passkey was last used.
+# Variables:
+#   $lastUsedDate (String) - a localized date string
+passkey-sub-row-last-used-date = Last used: { $lastUsedDate }
+
+# These two sentences are referring to the passkey
+passkey-sub-row-sign-in-only = Sign in only. Can’t be used to sync.
+
+passkey-sub-row-delete-title = Delete passkey
+passkey-delete-modal-heading = Delete your passkey?
+passkey-delete-modal-content = This passkey will be removed from your account. You’ll need to sign in using a different way.
+passkey-delete-modal-cancel-button = Cancel
+passkey-delete-modal-confirm-button = Delete passkey
+passkey-delete-success = Passkey deleted
+passkey-delete-error = There was a problem deleting your passkey. Try again in a few minutes.
+
+##
+
 ## Switch component
 
 # Used as "title" attribute when the switch is "on" and interaction turns the switch to "off"
@@ -1287,6 +1332,18 @@ row-defaults-action-add = Add
 row-defaults-action-change = Change
 row-defaults-action-disable = Disable
 row-defaults-status = None
+
+## UnitRowPasskey
+
+passkey-row-header = Passkeys
+passkey-row-enabled = Enabled
+passkey-row-not-set = Not Set
+passkey-row-action-create = Create
+passkey-row-description = Make sign in easier and more secure by using your phone or other supported device to get into your account.
+# External link to a support article. "This" refers to passkeys.
+passkey-row-info-link = How this protects your account
+
+##
 
 ## Account recovery key sub-section on main Settings page
 
